@@ -19,8 +19,7 @@ public class TicTacToe {
 			board[rMove][cMove] = who;
 			 if (who == 'X'){
 					who = 'O';
-			 }
-			 else {
+			 } else {
 					who = 'X';}
 			 turns++;
 		}
@@ -34,7 +33,7 @@ public class TicTacToe {
 	}
 	
 	public String whoIsWinner(){
-		if ((board[0][0] == board[0][1] && board[0][0] == board[0][2] && board[0][0] != '_')
+		if((board[0][0] == board[0][1] && board[0][0] == board[0][2] && board[0][0] != '_')
 			|| (board[1][0] == board[1][1] && board[1][0] == board[1][2] && board[1][0] != '_')
 			|| (board[2][0] == board[2][1] && board[2][0] == board[2][2] && board[2][0] != '_')
 			|| (board[0][0] == board[1][0] && board[0][0] == board[2][0] && board[0][0] != '_' )
@@ -57,7 +56,7 @@ public class TicTacToe {
 			return "";
 		}
 		return wonHow;
-}
+	}
 }
 
 
